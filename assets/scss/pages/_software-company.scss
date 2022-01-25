@@ -1,0 +1,202 @@
+.software-company-hero {
+    max-width: 1236px;
+    margin: 0 auto;
+    margin-top: 50px;
+    .advertisement-hero-left-snippet {
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            width: 30%;
+            z-index: 1;
+            top: 0px;
+            right: 0px;
+            height: 100%;
+            background-size: 18px 18px;
+            background-image: radial-gradient(rgb(51, 204, 112) 20%, transparent 20%);
+            opacity: 0.2;
+            z-index: -1;
+        }
+    }
+    .software-hero-code-snippet {
+        transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        border-radius: 4px;
+        background-color: rgb(55, 71, 79);
+        padding: 32px;
+        max-width: 600px;
+        margin: 0px auto;
+        box-shadow: rgba(140, 152, 164, 0.13) 0px 6px 24px 0px;
+        color: white;
+        margin-top: 40px;
+
+    }
+    .software-company-hero-content {
+        .marketing-features-content-context {
+            .marketing-features-content-context-item {
+                display: flex;
+                .software-company-hero-item-icon {
+                    margin-top: 10px;
+                    margin-right: 10px;
+                    span {
+                        background-color: rgba(0, 171, 85, 0.1);
+                        border-radius: 50%;
+                        padding: 20px 18px;
+                    }
+                }
+                .marketing-features-content-context-item-detail {
+                    margin-left: 10px;
+                    p {
+                        font-weight: 400;
+                        font-size: 0.875rem;
+                        line-height: 1.43;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.software-company-about-numbers {
+    background-color: var(--background-secondary-color);
+    .software-company-about-numbers-content {
+        max-width: 1236px;
+        margin: 0 auto;
+        .software-company-about-numbers-content-statistics {
+            justify-content: center;
+            h3 {
+                font-weight: 600;
+            }
+            h6 {
+                font-weight: 500;
+            }
+            p {
+                font-weight: 400;
+                font-size: 1rem;
+            }
+        }
+        .software-company-about-numbers-content-video {
+            text-align: center;
+            position: relative;
+            img {
+                width: 60%;
+                @media only screen and (max-width: 992px) {
+                    width: 100%;
+                }
+            }
+            svg {
+                position: absolute;
+                left: calc(50% - 32px);
+                top: calc(50% - 32px);
+            }
+        }
+    }
+}
+
+.software-premium-features {
+    border-bottom: 1px solid rgba(var(--border-color), 0.12);
+    .software-company-about-numbers-content-features {
+        max-width: 1236px;
+        margin: 0 auto;
+        text-align: left;
+        h3 {
+            padding: 64px 16px;
+        }
+        p {
+            font-weight: 400;
+            font-size: 0.875rem;
+        }
+        .software-company-about-numbers-content-features-context-item {
+            text-align: left;
+            .software-company-about-numbers-content-features-context-item-detail {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.software-company-reviews {
+    padding-left: 16px;
+    padding-right: 16px;
+    .review-iem {
+        max-width: 600px;
+        height: 200px;
+        h6 {
+            font-weight: 400;
+        }
+        .reviewer-man {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            img {
+                width: 40px;
+                border-radius: 50%;
+            }
+            .reviewer-man-name-job {
+                margin-left: 20px;
+                .reviewer-man-name {
+                    font-weight: 400;
+                    font-size: 1rem;
+                    line-height: 1.5;
+                }
+                .reviewer-man-job {
+                    font-weight: 400;
+                    font-size: 0.875rem;
+                    line-height: 1.43;
+                    color: rgb(100, 110, 115);
+                }
+            }
+        }
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-top: 40px;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .swiper-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.software-company-trust {
+    .software-company-trust-images {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        img {
+            max-width: 90px;
+            margin-top: 16px;
+            margin-right: 32px;
+        }
+    }
+}
